@@ -1,0 +1,15 @@
+<ng-container *ngFor="let data of factsData; let i = index">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading{{i}}">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <strong>Fact no. </strong>{{i}}
+          </button>
+        </h2>
+        <div id="collapseOne+{{i}}" class="accordion-collapse collapse show" aria-labelledby="heading" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            {{data}}
+          </div>
+        </div>
+      </div>
+</ng-container>
+
